@@ -7,10 +7,10 @@ $(document).ready(function () {
     //$(옮길태그).appendTo(부모가될태그)
 
 
-    const aniw = $(".swiper-slide").height();
+    const aniw = $(".swiper-slide").width();
 
     setInterval(function () {
-        $(".swiper-wrapper").animate({ "margintop": -aniw }, 400, function () {
+        $(".swiper-wrapper").animate({ "marginLeft": -aniw }, 400, function () {
             $(".swiper-slide").eq(0).appendTo($(".swiper-wrapper"))
             $(".swiper-wrapper").css("marginLeft", 0)
         })
